@@ -1563,6 +1563,7 @@ impl PlotItem for PlotImage {
 // ----------------------------------------------------------------------------
 
 /// A bar chart.
+#[derive(Clone)]
 pub struct BarChart {
     pub(super) bars: Vec<Bar>,
     pub(super) default_color: Color32,
